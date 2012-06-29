@@ -3,16 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snively", "Snively\Snively.csproj", "{9626379B-7C0B-4207-ADFD-525B4E09A934}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamSeat", "..\..\others\DreamSeat\DreamSeat\DreamSeat.csproj", "{AF987164-0100-4A90-A767-D473F882EA8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManager", "..\..\others\DreamSeat\Samples\ContactManager\ContactManager.csproj", "{E0A6B872-8C64-47CC-BD7C-63371B8B351F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLine", "..\..\others\commandline\src\libcmdline\CommandLine.csproj", "{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
+		DebugTests|Any CPU = DebugTests|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Debug|x86.Build.0 = Debug|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.DebugTests|Any CPU.ActiveCfg = DebugTests|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.DebugTests|Any CPU.Build.0 = DebugTests|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Release|x86.ActiveCfg = Release|Any CPU
+		{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}.Release|x86.Build.0 = Release|Any CPU
 		{9626379B-7C0B-4207-ADFD-525B4E09A934}.Debug|x86.ActiveCfg = Debug|x86
 		{9626379B-7C0B-4207-ADFD-525B4E09A934}.Debug|x86.Build.0 = Debug|x86
 		{9626379B-7C0B-4207-ADFD-525B4E09A934}.Release|x86.ActiveCfg = Release|x86
 		{9626379B-7C0B-4207-ADFD-525B4E09A934}.Release|x86.Build.0 = Release|x86
+		{AF987164-0100-4A90-A767-D473F882EA8B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF987164-0100-4A90-A767-D473F882EA8B}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF987164-0100-4A90-A767-D473F882EA8B}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF987164-0100-4A90-A767-D473F882EA8B}.Release|x86.Build.0 = Release|Any CPU
+		{E0A6B872-8C64-47CC-BD7C-63371B8B351F}.Debug|x86.ActiveCfg = Debug|x86
+		{E0A6B872-8C64-47CC-BD7C-63371B8B351F}.Debug|x86.Build.0 = Debug|x86
+		{E0A6B872-8C64-47CC-BD7C-63371B8B351F}.Release|x86.ActiveCfg = Release|x86
+		{E0A6B872-8C64-47CC-BD7C-63371B8B351F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Snively\Snively.csproj

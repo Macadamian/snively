@@ -51,6 +51,20 @@
     <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
       <Package>gtk-sharp-2.0</Package>
     </Reference>
+    <Reference Include="mindtouch.dream">
+      <HintPath>..\..\..\others\DreamSeat\Libraries\mindtouch.dream.dll</HintPath>
+    </Reference>
+    <Reference Include="mindtouch.core">
+      <HintPath>..\..\..\others\DreamSeat\Libraries\mindtouch.core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CSharp" />
+    <Reference Include="gtksourceview2-sharp, Version=2.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Private>False</Private>
+      <Package>gtksourceview2-sharp</Package>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\dependencies\Newtonsoft.Json.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -59,10 +73,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />
-    <Compile Include="MainWindow.cs" />
     <Compile Include="gtk-gui\MainWindow.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Models\Note.cs" />
+    <Compile Include="Arguments.cs" />
+    <Compile Include="NoteBrowser.cs" />
+    <Compile Include="NoteEditor.cs" />
+    <Compile Include="gtk-gui\Snively.NoteEditor.cs" />
+    <Compile Include="ViewModel\NoteViewModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -70,4 +89,28 @@
       <DeployService-TargetDirectoryId>Linux.DesktopApplications</DeployService-TargetDirectoryId>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\others\DreamSeat\DreamSeat\DreamSeat.csproj">
+      <Project>{AF987164-0100-4A90-A767-D473F882EA8B}</Project>
+      <Name>DreamSeat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\others\commandline\src\libcmdline\CommandLine.csproj">
+      <Project>{5DEA2811-2FFA-4959-830B-CAD3ACACABEB}</Project>
+      <Name>CommandLine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentSwitchBody="True" AnonymousMethodBraceStyle="NextLine" PropertyBraceStyle="NextLine" PropertyGetBraceStyle="NextLine" PropertySetBraceStyle="NextLine" EventBraceStyle="NextLine" EventAddBraceStyle="NextLine" EventRemoveBraceStyle="NextLine" StatementBraceStyle="NextLine" ArrayInitializerBraceStyle="NextLine" BeforeMethodDeclarationParentheses="False" BeforeMethodCallParentheses="False" BeforeConstructorDeclarationParentheses="False" BeforeDelegateDeclarationParentheses="False" NewParentheses="False" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
 </Project>

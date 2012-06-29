@@ -50,6 +50,11 @@ Desktop app offers multiple
 
 Inside a host note, tap the last, "Insert..." entry, to begin typing a new note title inline.  Finishing text entry returns you to the parents' note list, as you were before.  This enables fast line-item entry.
 
+### Search
+
+- case insensitive full-word indexing
+- if you match a note title, it should match the parents that contain that note
+
 ### Editing a Note
 
 Tapping on a note will yield a new note detail screen.  You can see the nested notes here, or edit the detail text (on mobile, 
