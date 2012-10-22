@@ -1,5 +1,10 @@
+# "Snively" Note-Taking App
 
-# Snively
+Copyright (C) 2012 Macadamian
+
+See COPYING for license details.
+
+Andrew Clunis <aclunis@macadamian.com>
 
 ## Synopsis
 
